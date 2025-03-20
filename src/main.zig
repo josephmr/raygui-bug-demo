@@ -26,6 +26,13 @@ pub fn main() anyerror!void {
             .height = 100,
         }, "foo");
 
+        _ = rg.guiLabel(rl.Rectangle{
+            .x = 100,
+            .y = 0,
+            .width = 100,
+            .height = 100,
+        }, "my label");
+
         rl.drawRectangleRec(rl.Rectangle{
             .x = 100,
             .y = 100,
